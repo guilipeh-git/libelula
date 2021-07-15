@@ -1,0 +1,116 @@
+body{ 
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    color: #ffffff; 
+    background-color:rgb(30, 30, 30) ;
+    }
+    @keyframes colors{
+        0% {
+            background-position: 0%,50%;
+        }
+        50% {
+            background-position: 100%,50%;
+        }
+
+        100%{
+            background-position: 0%,50%;
+        }
+    }.head{
+        margin-top:0px;
+        display:flex;
+        justify-content: space-between;
+        padding: 2%;
+        align-items:center;
+        flex-wrap:wrap;
+        background-color: rgba(60, 94, 83, 0.301);
+        background-image: linear-gradient(25deg,rgba(202, 35, 35, 0.233),rgba(42, 182, 138, 0.589),rgba(127, 43, 153, 0.356), rgba(27, 136, 101, 0.589));
+        background-size:200%,200%;
+        animation:colors 30s ease infinite;
+        
+    
+    }
+    .form-group1{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        max-width: 900px;
+        margin:0 auto;
+        grid-gap:5%;
+        margin-top:10px;
+       
+        
+        
+    
+    }
+    .form-group1 > div:nth-child(1){
+        background-color:#444444;
+        padding:30px;
+        border-radius: 15px;
+        border:solid
+     
+
+    }
+    .form-group1 div:nth-child(2){
+        background-color:#444444;
+        padding:30px;
+        border-radius: 15px;
+        border:solid
+        
+      
+    }.form-group1 div:nth-child(3){
+        background-color: #444444;
+        padding: 30px;
+        border-radius: 15px;
+        border:solid
+        
+    }
+    .btn{
+        
+        display:flex;
+        align-items:center;
+        background-color: blue;
+    }
+    .form-group1
+    H3{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        margin-top: -15px;
+        margin-left: 30%;
+    }
+    .ipt{
+        border-radius: 8px;
+        margin-bottom:15px; 
+        width:100%;
+        padding: 4px;
+    
+        
+    }.btn{
+ background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+
+ border: 1px solid #29292c;
+ border-radius: 9px;
+ 
+ color: #353538;
+ display: block;
+ font-family: "Trebuchet MS";
+ font-size: 14px;
+ font-weight: bold;
+ line-height: 25px;
+ text-align: center;
+ text-decoration: none;
+ text-transform: uppercase;
+ text-shadow:1px 1px 0 rgb(148, 140, 140);
+ padding: 5px 15px;
+ position: absolute;
+ width: 80px;
+margin-left:410px;
+margin-top: -10px;
+}
+.img{
+    width: 10%;
+    position: absolute;
+    margin-left: 87%;
+    
+}

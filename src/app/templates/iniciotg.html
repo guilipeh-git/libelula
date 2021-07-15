@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Estilo Incorporado </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static\bootstrap.css">
+</head>
+
+<body style="background-color: white;">
+
+    <h1>BS Score</h1>
+
+    <p>
+        Bem vindo ao preditor do BS Score! Favor iniciar informando o nome do degustador e o lote a ser avaliado!!
+    </p>
+    <form action="{{url_for('adc')}}" method="post">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" value="" required>
+        </div><br>
+
+        <div class="form-group">
+            <label for="lote">Lote</label>
+            <input type="text" class="form-control" id="lote" name="lote" value="" required>
+        </div><br>
+
+        <div class="form-group">
+            <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+            <label for="comentario1">Comentário:</label>
+
+
+            <div class="row-fluid">
+                <select class="selectpicker" data-live-search="true" id="comentario1" name="comentario1">
+                        <option >teste</option>
+                        <option >maca</option>
+                        <option >abacaxi</option>
+                        <option >morango</option>
+                        <option >uva</option>
+                        <option disabled="disabled">Marvin Martinez</option>
+                    </select>
+            </div><br>
+
+        </div>
+
+        <div class="form-group">
+            <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+            <label for="comentario1">Comentário:</label>
+
+
+            <div class="row-fluid">
+                <select class="selectpicker" data-show-subtext="true" data-live-search="true" id="comentario1" name="comentario1">
+                            <option >banana</option>
+                            <option >maca</option>
+                            <option >abacaxi</option>
+                            <option >morango</option>
+                            <option >uva</option>
+                            <option disabled="disabled">Marvin Martinez</option>
+                        </select>
+            </div><br>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+
+        </div><br>
+
+        <button type="submit" class="btn btn-primary">enviar</button>
+    </form>
+</body>
+
+</html>

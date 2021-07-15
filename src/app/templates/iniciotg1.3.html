@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Estilo Incorporado </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="static/bootstrap.css">
+    <link rel="stylesheet" href="static/meu.libelula.css">
+</head>
+<style>
+   body{
+        background-image: linear-gradient(25deg,black,#171717, #444444, #9f97b1);
+        background-size:300%,300%;
+        color: #ffffff; 
+        animation:colors 30s ease infinite;
+        }
+        @keyframes colors{
+            0% {
+                background-position: 0%,50%;
+            }
+            50% {
+                background-position: 100%,50%;
+            }
+
+            100%{
+                background-position: 0%,50%;
+            }
+        }
+</style>
+<body class="gradient">
+    
+
+    <h1 style="margin-left: 500px;margin-top: 3px;">Previsão de Energia</h1><br>
+
+    <p>
+        Bem vindo ao preditor de energia da Cervejaria Anápolis! <br><p style="margin-left: 430px;margin-top: -10px; position:absolute">Favor iniciar informando os dados de produção que gostaria de avaliar
+    </p></p><br>
+
+    <form action="{{url_for('adc')}}" method="post">
+        <div class="col-md-3">
+            <tdi class="tdi">
+                <div class="teste">
+                    <H3 style="margin-top:-170px;margin-left: 38%;">Teste</H3>
+                    <hr style="margin-top:10px;">
+                    <label for="Brassagem" class="ipt1" style="margin-top: 3px;">Brassagem</label>
+                    <input type="text" class="ipt" id="Brassagem" name="Brassagem" value="">
+                </div>
+
+                <div class="form-group">
+                    <label for="Centrifuga" class="ipt1">Centrifuga</label>
+                    <td>
+                        <th>
+                            <input type="text" class="ipt" id="Centrifuga" name="Centrifuga" value="">
+                        </th>
+                    </td>
+
+                    <div class="form-group">
+                        <label for="Filtracao" class="ipt1">Filtração</label>
+                        <td>
+                            <th>
+                                <input type="text" class="ipt" id="Filtracao" name="Filtracao" value="">
+                            </th>
+                        </td>
+                        <div class="form-group">
+                            
+                            <div class="form-group">
+            </tdi>
+            <tdi class="tdi2">
+                <H3 style="margin-top:10px;margin-left: 34%;">Teste_2</H3>
+                    <hr style="margin-top:10px;">
+                
+                <label for="L_503" class="ipt1" style="margin-top: 3px;">L_503</label>
+                <td>
+
+                    <th>
+                        <input type="text" class="ipt" id="L_503" name="L_503" value="">
+                    </th>
+                </td>
+                <div class="form-group">
+                    <label for="L_511" class="ipt1">L_511</label>
+                    <td>
+                        <th>
+                            <input type="text" class="ipt" id="L_511" name="L_511" value="">
+                        </th>
+                    </td>
+                        <label for="L_511_B" class="ipt1">L_511_B</label>
+                    <td>
+                        <th>
+                            <input type="text" class="ipt" id="L_511_B" name="L_511_B" value="">
+                        </th>
+                    </td>
+
+                    <div class="form-group">
+
+                        <label for="L_512" class="ipt2" style="margin-top: -30px;">L_512</label>
+                        <td>
+                            <th>
+                                <input type="text" class="ipt3" id="L_512" name="L_512" value="">
+                            </th>
+                        </td>
+                        <label for="L_501" class="ipt1">L_501</label>
+                        <td>
+                            <th>
+                                <input type="text" class="ipt" id="L_501" name="L_501" value="">
+                            </th>
+                        </td>
+                        
+                            <div class="form-group ">
+            </tdi>
+            <tdi class="tdi3 ">
+                <H3 style="margin-top:10px;margin-left: 34%;">Teste_2</H3>
+                    <hr style="margin-top:10px;">
+                
+                <label for="L_551 " class="ipt2 " style="margin-top: 20px;">L_551</label>
+                <td>
+                    <th>
+                        <input type="text " class="ipt3 " id="L_551 " name="L_551 " value=" ">
+                    </th>
+                </td>
+                <div class="form-group ">
+                    <label for="L_561 " class="ipt2 ">L_561</label>
+                    <td>
+                        <th>
+                            <input type="text " class="ipt3 " id="L_561 " name="L_561 " value=" ">
+                        </th>
+                    </td>
+                    <div class="form-group ">
+                        <label for="L_562 " class="ipt2 ">L_562</label>
+                        <td>
+                            <th>
+                                <input type="text " class="ipt3 " id="L_562 " name="L_562 " value=" ">
+                            </th>
+                        </td> <label for="L_521 " class="ipt2 ">L_521</label>
+                        <td>
+                            <th>
+                                <input type="text " class="ipt3 " id="L_521 " name="L_521 " value=" ">
+                            </th>
+                        </td>
+                    </div>
+
+
+
+            </tdi>
+            <div class="form-group ">
+                <td>
+                    <th>
+                        <button type="submit " style="margin-top: 45px; margin-right: 754px; position: absolute;margin-left: -240px; " class="btn btn-primary ">enviar</button>
+                    </th>
+                </td>
+
+            </div>
+    </form>
+
+
+
+
+</body>
+
+</html>
+
+</html>
